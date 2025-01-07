@@ -9,8 +9,8 @@ public static class DataExtensions
     {
         await app.MigrateDbAsync();
         await app.SeedDbAsync();
+        app.Logger.LogInformation(14, "The database has been initialized.");
     }
-
 
     private static async Task MigrateDbAsync(this WebApplication app)
     {
@@ -26,7 +26,7 @@ public static class DataExtensions
         GameStoreContext dbContext = scope.ServiceProvider
                                           .GetRequiredService<GameStoreContext>();
 
-        if (!dbContext.Genres.Any())
+        if (!await dbContext.Genres.AnyAsync())
         {
             dbContext.Genres.AddRange(
                 new Genre { Name = "Fighting" },

@@ -9,7 +9,7 @@ public static class CreateGameEndpoint
     public static void MapCreateGame(this IEndpointRouteBuilder app)
     {
         // POST /games
-        app.MapPost("/", async (CreateGameDto gameDto, GameStoreContext dbContext) =>
+        app.MapPost("/", async (CreateGameDto gameDto, GameStoreContext dbContext, ILogger<Program> logger) =>
         {
             Game game = new Game
             {
@@ -23,6 +23,8 @@ public static class CreateGameEndpoint
             dbContext.Games.Add(game);
 
             await dbContext.SaveChangesAsync();
+
+            logger.LogInformation("Game {GameName} created with id {Id}", game.Name, game.Id);
 
             return Results.CreatedAtRoute(EndpointNames.GetGame, new { id = game.Id }, new GameDetailsDto(
                 game.Id,
