@@ -12,6 +12,6 @@ var app = builder.Build();
 
 app.MapGames();
 app.MapGenre();
-app.InitializeDb();
+await app.InitializeDbAsync();
 
 await app.RunAsync();
