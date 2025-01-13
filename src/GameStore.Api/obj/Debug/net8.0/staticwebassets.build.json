@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "Utbl/a8YfDjY8TkWMhKS5kHpiGzIQuKt5xhEtoFCXss=",
+  "Hash": "HsAaFVlesvUvr2xFIQ7TynMUPtv+1ixE157CoHJm7e4=",
   "Source": "GameStore.Api",
   "BasePath": "_content/GameStore.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "GameStore.Api\\wwwroot",
+      "Source": "GameStore.Api",
+      "ContentRoot": "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\",
+      "BasePath": "_content/GameStore.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\fea8e560-46bf-4181-bb87-68f61a39edc9.jpg",
+      "SourceId": "GameStore.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\",
+      "BasePath": "_content/GameStore.Api",
+      "RelativePath": "GameImages/fea8e560-46bf-4181-bb87-68f61a39edc9#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mw59y59sus",
+      "Integrity": "JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\GameImages\\fea8e560-46bf-4181-bb87-68f61a39edc9.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "GameImages/fea8e560-46bf-4181-bb87-68f61a39edc9.jpg",
+      "AssetFile": "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\fea8e560-46bf-4181-bb87-68f61a39edc9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487267"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 20:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko="
+        }
+      ]
+    },
+    {
+      "Route": "GameImages/fea8e560-46bf-4181-bb87-68f61a39edc9.mw59y59sus.jpg",
+      "AssetFile": "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\fea8e560-46bf-4181-bb87-68f61a39edc9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487267"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 20:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mw59y59sus"
+        },
+        {
+          "Name": "label",
+          "Value": "GameImages/fea8e560-46bf-4181-bb87-68f61a39edc9.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JqwnDW4vMlJK3ituLEcIH/T++LD9QUfgxDuPCUED0ko="
+        }
+      ]
+    }
+  ]
 }

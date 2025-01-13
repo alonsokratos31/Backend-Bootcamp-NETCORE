@@ -2,6 +2,7 @@ using GameStore.Api.Data;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
 using GameStore.Api.Shared.ErrorHandling;
+using GameStore.Api.Shared.FileUpload;
 using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,13 +18,22 @@ builder.Services.AddHttpLogging(options =>
     options.CombineLogs = true;
 });
 
-var app = builder.Build();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddHttpContextAccessor()
+                .AddSingleton<FileUploader>();
 
+var app = builder.Build();
+app.UseStaticFiles();
 app.MapGames();
 app.MapGenre();
 app.UseHttpLogging();
 
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+}
+else
 {
     app.UseExceptionHandler();
 }

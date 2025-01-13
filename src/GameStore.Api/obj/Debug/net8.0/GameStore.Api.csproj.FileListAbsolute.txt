@@ -269,3 +269,7 @@ C:\repos\Proyectos_NET CORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\Gam
 C:\repos\Proyectos_NET CORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.pdb
 C:\repos\Proyectos_NET CORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.genruntimeconfig.cache
 C:\repos\Proyectos_NET CORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Debug\net8.0\ref\GameStore.Api.dll
+C:\repos\Proyectos_NET CORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\repos\Proyectos_NET CORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\repos\Proyectos_NET CORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\repos\Proyectos_NET CORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.staticwebassets.runtime.json

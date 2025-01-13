@@ -16,4 +16,6 @@ public class Game
 
     public required string Description { get; set; }
 
+    public required string ImageUri { get; set; }
+
 }

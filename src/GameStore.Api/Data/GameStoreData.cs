@@ -26,7 +26,8 @@ public class GameStoreData
                 GenreId = genres[0].Id,
                 Price = 19.99m,
                 ReleaseDate = new DateOnly(1992, 7, 15),
-                Description = "Mejor juego de pelea"
+                Description = "Mejor juego de pelea",
+                ImageUri = "https://example.com/mortal_kombat.jpg"
 
             },
             new Game
@@ -36,8 +37,9 @@ public class GameStoreData
                 Genre = genres[1],
                 GenreId = genres[1].Id,
                 Price = 39.99m,
-                ReleaseDate = new DateOnly(2000, 7, 15),
-                Description = "Mejor juego de RPG"
+                Description = "Mejor juego de RPG",
+                ImageUri = "https://example.com/final_fantasy.jpg"
+
 
             },
             new Game
@@ -46,10 +48,9 @@ public class GameStoreData
                 Name = "Uncharted",
                 Genre = genres[2],
                 GenreId = genres[2].Id,
-                Price = 69.99m,
+                Description = "Mejor juego de aventura",
+                ImageUri = "https://example.com/uncharted.jpg",
                 ReleaseDate = new DateOnly(2008, 7, 15),
-                Description = "Mejor juego de aventura"
-
             }
 
         ];
