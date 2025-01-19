@@ -27,7 +27,8 @@ public static class GetGamesEndpoint
                                     game.Price,
                                     game.ReleaseDate,
                                     game.Description,
-                                    game.ImageUri
+                                    game.ImageUri,
+                                    game.LastUpdatedBy
                                 )).AsNoTracking()
                                 .ToListAsync();
 
@@ -35,6 +36,6 @@ public static class GetGamesEndpoint
             var totalPages = (int)Math.Ceiling(totalGames / (double)request.PageSize);
 
             return new GamesPageDto(totalPages, gamesOnPage);
-        });
+        }).AllowAnonymous();
     }
 }

@@ -1,7 +1,31 @@
 {
   "Files": [
     {
-      "Id": "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\fea8e560-46bf-4181-bb87-68f61a39edc9.jpg",
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\042f4e22-7119-4fce-99a9-4974b96270bc.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\042f4e22-7119-4fce-99a9-4974b96270bc.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\8c7a8f0c-f1c5-4cf1-aef1-cac0f9edea76.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\8c7a8f0c-f1c5-4cf1-aef1-cac0f9edea76.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\8d5302c8-1002-45b8-a98f-b06b0335e81b.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\8d5302c8-1002-45b8-a98f-b06b0335e81b.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\a35aebf5-fc3a-4850-b96d-08a517071cc7.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\a35aebf5-fc3a-4850-b96d-08a517071cc7.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\a7cc3311-0dcc-4a7d-b9b0-e2bbda103fe4.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\a7cc3311-0dcc-4a7d-b9b0-e2bbda103fe4.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\f13c14b1-8f3b-4284-932a-c067c5f3b2b4.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\f13c14b1-8f3b-4284-932a-c067c5f3b2b4.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\fea8e560-46bf-4181-bb87-68f61a39edc9.jpg",
       "PackagePath": "staticwebassets\\GameImages\\fea8e560-46bf-4181-bb87-68f61a39edc9.jpg"
     },
     {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj": {}
+    "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj": {}
   },
   "projects": {
-    "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj": {
+    "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
+        "projectUniqueName": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
         "projectName": "GameStore.Api",
-        "projectPath": "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
+        "projectPath": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\Proyectos_NET CORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\obj\\",
+        "outputPath": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

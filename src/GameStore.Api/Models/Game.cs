@@ -18,4 +18,6 @@ public class Game
 
     public required string ImageUri { get; set; }
 
+    public required string LastUpdatedBy { get; set; }
+
 }

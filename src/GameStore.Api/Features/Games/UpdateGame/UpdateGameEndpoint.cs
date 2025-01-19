@@ -1,6 +1,9 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
 using GameStore.Api.Models;
+using GameStore.Api.Shared.Authorization;
 using GameStore.Api.Shared.FileUpload;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,8 +15,18 @@ public static class UpdateGameEndpoint
     {
         // PUT/games/23265659-54554-544
         app.MapPut("/{id}", async (Guid id, [FromForm] UpdateGameDto updatedGame,
-                                  GameStoreContext dbContext, FileUploader fileUploader) =>
+                                  GameStoreContext dbContext, FileUploader fileUploader,
+                                  ClaimsPrincipal user) =>
         {
+
+            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Sub);
+
+            if (string.IsNullOrEmpty(currentUserId))
+            {
+                return Results.Unauthorized();
+            }
+
+
             Game? existingGame = await dbContext.Games.FindAsync(id);
             if (existingGame is null)
             {
@@ -37,13 +50,15 @@ public static class UpdateGameEndpoint
             existingGame.Price = updatedGame.Price;
             existingGame.ReleaseDate = updatedGame.ReleaseDate;
             existingGame.Description = updatedGame.Description;
+            existingGame.LastUpdatedBy = currentUserId;
 
             await dbContext.SaveChangesAsync();
 
             return Results.NoContent();
         })
         .WithParameterValidation()
-        .DisableAntiforgery();
+        .DisableAntiforgery()
+        .RequireAuthorization(Policies.AdminAccess);
     }
 
 }

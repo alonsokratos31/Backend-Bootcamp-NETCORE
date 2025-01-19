@@ -1,6 +1,9 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
 using GameStore.Api.Models;
+using GameStore.Api.Shared.Authorization;
 using GameStore.Api.Shared.FileUpload;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,8 +18,21 @@ public static class CreateGameEndpoint
         app.MapPost("/", async ([FromForm] CreateGameDto gameDto,
                                 GameStoreContext dbContext,
                                 ILogger<Program> logger,
-                                FileUploader fileUploader) =>
+                                FileUploader fileUploader,
+                                ClaimsPrincipal user) =>
         {
+
+            if (user?.Identity?.IsAuthenticated == false)
+            {
+                return Results.Unauthorized();
+            }
+
+            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Sub);
+
+            if (string.IsNullOrEmpty(currentUserId))
+            {
+                return Results.Unauthorized();
+            }
 
             var imageUri = DefaultImageUri;
 
@@ -39,7 +55,8 @@ public static class CreateGameEndpoint
                 Price = gameDto.Price,
                 ReleaseDate = gameDto.ReleaseDate,
                 Description = gameDto.Description,
-                ImageUri = imageUri!
+                ImageUri = imageUri!,
+                LastUpdatedBy = currentUserId
             };
 
             dbContext.Games.Add(game);
@@ -55,10 +72,12 @@ public static class CreateGameEndpoint
                 game.Price,
                 game.ReleaseDate,
                 game.Description,
-                game.ImageUri
+                game.ImageUri,
+                game.LastUpdatedBy
             ));
         })
         .WithParameterValidation()
-        .DisableAntiforgery();
+        .DisableAntiforgery()
+        .RequireAuthorization(Policies.AdminAccess);
     }
 }

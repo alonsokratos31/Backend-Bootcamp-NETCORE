@@ -27,7 +27,8 @@ public class GameStoreData
                 Price = 19.99m,
                 ReleaseDate = new DateOnly(1992, 7, 15),
                 Description = "Mejor juego de pelea",
-                ImageUri = "https://example.com/mortal_kombat.jpg"
+                ImageUri = "https://example.com/mortal_kombat.jpg",
+                LastUpdatedBy = "admin"
 
             },
             new Game
@@ -38,7 +39,8 @@ public class GameStoreData
                 GenreId = genres[1].Id,
                 Price = 39.99m,
                 Description = "Mejor juego de RPG",
-                ImageUri = "https://example.com/final_fantasy.jpg"
+                ImageUri = "https://example.com/final_fantasy.jpg",
+                LastUpdatedBy = "admin"
 
 
             },
@@ -51,6 +53,7 @@ public class GameStoreData
                 Description = "Mejor juego de aventura",
                 ImageUri = "https://example.com/uncharted.jpg",
                 ReleaseDate = new DateOnly(2008, 7, 15),
+                LastUpdatedBy = "admin"
             }
 
         ];
