@@ -1,6 +1,9 @@
+using System.Security.Claims;
 using GameStore.Api.Data;
+using GameStore.Api.Features.Baskets.Authorization;
 using GameStore.Api.Models;
 using GameStore.Api.Shared.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 namespace GameStore.Api.Features.Baskets.UpsertBasket;
@@ -13,7 +16,9 @@ public static class UpsertBasketEndpoint
         app.MapPut("/{userId}", async (
             Guid userId,
             UpsertBasketDto upsertBasketDto,
-            GameStoreContext dbContext
+            GameStoreContext dbContext,
+            IAuthorizationService authorizationService,
+            ClaimsPrincipal user
         ) =>
         {
             var basket = await dbContext.Baskets
@@ -42,6 +47,13 @@ public static class UpsertBasketEndpoint
                     GameId = item.Id,
                     Quantity = item.Quantity
                 }).ToList();
+            }
+
+            var authResult = await authorizationService.AuthorizeAsync(user, basket, new OwnerOrAdminRequirement());
+
+            if (!authResult.Succeeded)
+            {
+                return Results.Forbid();
             }
 
             await dbContext.SaveChangesAsync();
