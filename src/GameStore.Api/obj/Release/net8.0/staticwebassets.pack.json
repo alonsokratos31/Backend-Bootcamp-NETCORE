@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\042f4e22-7119-4fce-99a9-4974b96270bc.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\042f4e22-7119-4fce-99a9-4974b96270bc.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\3c33433a-eb13-44d4-94e9-10bcdc3d324e.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\3c33433a-eb13-44d4-94e9-10bcdc3d324e.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\5ba710d7-037e-4d3d-90fb-5c64804407b7.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\5ba710d7-037e-4d3d-90fb-5c64804407b7.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\89a0706e-776a-458c-8324-a14effc7ba39.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\89a0706e-776a-458c-8324-a14effc7ba39.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\8c7a8f0c-f1c5-4cf1-aef1-cac0f9edea76.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\8c7a8f0c-f1c5-4cf1-aef1-cac0f9edea76.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\8d5302c8-1002-45b8-a98f-b06b0335e81b.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\8d5302c8-1002-45b8-a98f-b06b0335e81b.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\a35aebf5-fc3a-4850-b96d-08a517071cc7.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\a35aebf5-fc3a-4850-b96d-08a517071cc7.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\a7cc3311-0dcc-4a7d-b9b0-e2bbda103fe4.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\a7cc3311-0dcc-4a7d-b9b0-e2bbda103fe4.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\ad5c6e55-e3f8-48ee-917d-0efdd217e983.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\ad5c6e55-e3f8-48ee-917d-0efdd217e983.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\f13c14b1-8f3b-4284-932a-c067c5f3b2b4.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\f13c14b1-8f3b-4284-932a-c067c5f3b2b4.jpg"
+    },
+    {
+      "Id": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.API\\wwwroot\\GameImages\\fea8e560-46bf-4181-bb87-68f61a39edc9.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\fea8e560-46bf-4181-bb87-68f61a39edc9.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.GameStore.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.GameStore.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.GameStore.Api.props",
+      "PackagePath": "build\\GameStore.Api.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GameStore.Api.props",
+      "PackagePath": "buildMultiTargeting\\GameStore.Api.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.GameStore.Api.props",
+      "PackagePath": "buildTransitive\\GameStore.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

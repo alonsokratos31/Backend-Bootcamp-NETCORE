@@ -421,3 +421,9 @@ C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\Game
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.pdb
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Debug\net8.0\GameStore.Api.genruntimeconfig.cache
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Debug\net8.0\ref\GameStore.Api.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Azure.Core.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Azure.Storage.Blobs.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Azure.Storage.Common.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\System.ClientModel.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\System.IO.Hashing.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\System.Memory.Data.dll

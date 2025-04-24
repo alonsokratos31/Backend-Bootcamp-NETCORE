@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/4bd5a0d2-6ad2-43a2-9b35-bbce696af85d/resourceGroups/rg-gamestore-dev-southamerica-01/providers/Microsoft.Web/sites/app-gamestore-be-dev-southamerica-01",
+    "appService.deploySubpath": "published"
+}

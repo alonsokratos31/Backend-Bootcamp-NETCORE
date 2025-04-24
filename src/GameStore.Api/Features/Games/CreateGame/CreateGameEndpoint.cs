@@ -27,7 +27,8 @@ public static class CreateGameEndpoint
                 return Results.Unauthorized();
             }
 
-            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Sub);
+            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Email)
+                                ?? user?.FindFirstValue(GameStoreClaimTypes.UserId);
 
             if (string.IsNullOrEmpty(currentUserId))
             {
@@ -38,7 +39,7 @@ public static class CreateGameEndpoint
 
             if (gameDto.ImageFile is not null)
             {
-                var fileUploaderResult = await fileUploader.UploadFileAsync(gameDto.ImageFile, StorageNames.GameImageFolder);
+                var fileUploaderResult = await fileUploader.UploadFileAsync(gameDto.ImageFile, StorageNames.GameImagesFolder);
 
                 if (!fileUploaderResult.IsSucess)
                 {

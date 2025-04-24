@@ -11,5 +11,16 @@ services:
       - keycloak-data:/opt/keycloak/data
     command: ["start-dev"]
 
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite:3.34.0
+    container_name: azurite
+    ports:
+      - "10000:10000" # Blob service
+      - "10001:10001" # Queue service
+      - "10002:10002" # Table service
+    volumes:
+      - azurite-data:/data
+
 volumes:
   keycloak-data:
+  azurite-data:

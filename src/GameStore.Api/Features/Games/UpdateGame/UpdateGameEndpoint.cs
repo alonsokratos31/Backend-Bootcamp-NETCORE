@@ -2,7 +2,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
-using GameStore.Api.Models;
 using GameStore.Api.Shared.Authorization;
 using GameStore.Api.Shared.FileUpload;
 using Microsoft.AspNetCore.Mvc;
@@ -13,43 +12,49 @@ public static class UpdateGameEndpoint
 {
     public static void MapUpdateGame(this IEndpointRouteBuilder app)
     {
-        // PUT/games/23265659-54554-544
-        app.MapPut("/{id}", async (Guid id, [FromForm] UpdateGameDto updatedGame,
-                                  GameStoreContext dbContext, FileUploader fileUploader,
-                                  ClaimsPrincipal user) =>
+        // PUT /games/122233-434d-43434....
+        app.MapPut("/{id}", async (
+            Guid id,
+            [FromForm] UpdateGameDto gameDto,
+            GameStoreContext dbContext,
+            FileUploader fileUploader,
+            ClaimsPrincipal user) =>
         {
-
-            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Sub);
+            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Email)
+                                ?? user?.FindFirstValue(GameStoreClaimTypes.UserId);
 
             if (string.IsNullOrEmpty(currentUserId))
             {
                 return Results.Unauthorized();
             }
 
+            var existingGame = await dbContext.Games.FindAsync(id);
 
-            Game? existingGame = await dbContext.Games.FindAsync(id);
             if (existingGame is null)
             {
                 return Results.NotFound();
             }
 
-            if (updatedGame.ImageFile is not null)
+            if (gameDto.ImageFile is not null)
             {
-                var fileUploaderResult = await fileUploader.UploadFileAsync(updatedGame.ImageFile, StorageNames.GameImageFolder);
+                var fileUploadResult = await fileUploader.UploadFileAsync(
+                    gameDto.ImageFile,
+                    StorageNames.GameImagesFolder
+                );
 
-                if (!fileUploaderResult.IsSucess)
+                if (!fileUploadResult.IsSucess)
                 {
-                    return Results.BadRequest(new { message = fileUploaderResult.ErrorMessage });
+                    return Results.BadRequest(new { message = fileUploadResult.ErrorMessage });
                 }
 
-                existingGame.ImageUri = fileUploaderResult.FileUrl!;
+                existingGame.ImageUri = fileUploadResult.FileUrl!;
             }
 
-            existingGame.Name = updatedGame.Name;
-            existingGame.GenreId = updatedGame.GenreId;
-            existingGame.Price = updatedGame.Price;
-            existingGame.ReleaseDate = updatedGame.ReleaseDate;
-            existingGame.Description = updatedGame.Description;
+            existingGame.Name = gameDto.Name;
+            existingGame.GenreId = gameDto.GenreId;
+            existingGame.Price = gameDto.Price;
+            existingGame.ReleaseDate = gameDto.ReleaseDate;
+            existingGame.Description = gameDto.Description;
             existingGame.LastUpdatedBy = currentUserId;
 
             await dbContext.SaveChangesAsync();
@@ -60,5 +65,4 @@ public static class UpdateGameEndpoint
         .DisableAntiforgery()
         .RequireAuthorization(Policies.AdminAccess);
     }
-
 }
