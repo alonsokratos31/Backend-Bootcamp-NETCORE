@@ -1,7 +1,7 @@
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games.Constants;
 using GameStore.Api.Models;
-using Microsoft.Data.Sqlite;
+using GameStore.Api.Shared.Cdn;
 
 namespace GameStore.Api.Features.Games.GetGame;
 
@@ -9,7 +9,7 @@ public static class GetGameEndpoint
 {
     public static void MapGetGame(this IEndpointRouteBuilder app)
     {
-        app.MapGet("/{id}", async (Guid id, GameStoreContext dbContext, ILogger<Program> logger) =>
+        app.MapGet("/{id}", async (Guid id, GameStoreContext dbContext, CdnUrlTransformer cdnUrlTransformer, ILogger<Program> logger) =>
         {
 
             Game? game = await dbContext.Games.FindAsync(id);
@@ -22,7 +22,7 @@ public static class GetGameEndpoint
                    game.Price,
                    game.ReleaseDate,
                    game.Description,
-                   game.ImageUri,
+                   cdnUrlTransformer.TransformToCdnUrl(game.ImageUri),
                    game.LastUpdatedBy
                ));
         })

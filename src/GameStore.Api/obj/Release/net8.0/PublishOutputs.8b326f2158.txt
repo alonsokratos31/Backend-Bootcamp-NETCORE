@@ -4,7 +4,11 @@ C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\publishe
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\GameStore.Api.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\GameStore.Api.runtimeconfig.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\GameStore.Api.pdb
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Azure.Core.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Azure.Storage.Blobs.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Azure.Storage.Common.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Microsoft.Bcl.AsyncInterfaces.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Microsoft.Data.Sqlite.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Microsoft.EntityFrameworkCore.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -32,7 +36,10 @@ C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\publishe
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Swashbuckle.AspNetCore.Swagger.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\System.ClientModel.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\System.IdentityModel.Tokens.Jwt.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\System.IO.Hashing.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\System.Memory.Data.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\runtimes\linux-arm\native\libe_sqlite3.so
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\runtimes\linux-arm64\native\libe_sqlite3.so

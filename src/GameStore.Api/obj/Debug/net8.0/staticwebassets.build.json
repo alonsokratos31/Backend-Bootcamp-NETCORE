@@ -1,20 +1,12 @@
 {
   "Version": 1,
-  "Hash": "B2lB9MA2QGhXlGEUuZ77ANAVvbKMF2HFkWJ1c0DgSVk=",
+  "Hash": "Utbl/a8YfDjY8TkWMhKS5kHpiGzIQuKt5xhEtoFCXss=",
   "Source": "GameStore.Api",
   "BasePath": "_content/GameStore.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "GameStore.Api\\wwwroot",
-      "Source": "GameStore.Api",
-      "ContentRoot": "C:\\repos\\Proyectos_NETCORE\\DotNetCodeAcademy\\Bootcamp\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\",
-      "BasePath": "_content/GameStore.Api",
-      "Pattern": "**"
-    }
-  ],
+  "DiscoveryPatterns": [],
   "Assets": [],
   "Endpoints": []
 }
