@@ -1,3 +1,4 @@
+using Azure.Identity;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Baskets;
 using GameStore.Api.Features.Baskets.Authorization;
@@ -9,6 +10,7 @@ using GameStore.Api.Shared.ErrorHandling;
 using GameStore.Api.Shared.FileUpload;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.HttpLogging;
+using Microsoft.Extensions.Azure;
 using Microsoft.Net.Http.Headers;
 
 
@@ -17,8 +19,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddProblemDetails()
                 .AddExceptionHandler<GlobalExceptionHandler>();
 
-var connString = builder.Configuration.GetConnectionString("GameStore");
-builder.Services.AddSqlite<GameStoreContext>(connString);
+var credential = new DefaultAzureCredential(new DefaultAzureCredentialOptions
+{
+
+    ManagedIdentityClientId = builder.Configuration["AZURE_CLIENT_ID"]
+});
+
+builder.AddGameStoreNpgsql<GameStoreContext>("GameStoreDb", credential);
+
 builder.Services.AddHttpLogging(options =>
 {
     options.LoggingFields = HttpLoggingFields.RequestMethod | HttpLoggingFields.RequestPath |
@@ -28,7 +36,9 @@ builder.Services.AddHttpLogging(options =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.AddFileUploader();
+
+
+builder.AddFileUploader(credential);
 
 builder.AddGameStoreAuthentication();
 builder.AddGameStoreAuthorization();
@@ -47,6 +57,7 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddSingleton<CdnUrlTransformer>();
+builder.Services.AddSingleton<AzureEventSourceLogForwarder>();
 var app = builder.Build();
 
 app.UseCors();
@@ -64,6 +75,8 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
+    app.Services.GetRequiredService<AzureEventSourceLogForwarder>()
+                .Start();
     app.UseExceptionHandler();
 }
 
