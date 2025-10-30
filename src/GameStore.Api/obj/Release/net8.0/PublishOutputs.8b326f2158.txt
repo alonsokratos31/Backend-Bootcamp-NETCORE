@@ -1,4 +1,3 @@
-C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\GameStore.Api.exe
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\appsettings.Development.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\appsettings.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\published\GameStore.Api.dll

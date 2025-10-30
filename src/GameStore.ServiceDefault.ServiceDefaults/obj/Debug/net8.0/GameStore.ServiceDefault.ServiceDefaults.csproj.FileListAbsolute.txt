@@ -1,0 +1,13 @@
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\bin\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.deps.json
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\bin\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\bin\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.pdb
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.csproj.AssemblyReference.cache
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.AssemblyInfoInputs.cache
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.AssemblyInfo.cs
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.sourcelink.json
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\refint\GameStore.ServiceDefault.ServiceDefaults.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\GameStore.ServiceDefault.ServiceDefaults.pdb
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\backend\src\GameStore.ServiceDefault.ServiceDefaults\obj\Debug\net8.0\ref\GameStore.ServiceDefault.ServiceDefaults.dll

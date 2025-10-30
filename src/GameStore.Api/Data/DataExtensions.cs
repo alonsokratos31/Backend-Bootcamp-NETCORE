@@ -11,7 +11,7 @@ public static class DataExtensions
     {
         await app.MigrateDbAsync();
         await app.SeedDbAsync();
-        app.Logger.LogInformation(14, "The database has been initialized.");
+        app.Logger.LogInformation(18, "The Game Store database has been initialized.");
     }
 
     public static WebApplicationBuilder AddGameStoreNpgsql<TContext>(this WebApplicationBuilder builder,

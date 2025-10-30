@@ -2,7 +2,6 @@ C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\Game
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\appsettings.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\GameStore.Api.staticwebassets.runtime.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\GameStore.Api.staticwebassets.endpoints.json
-C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\GameStore.Api.exe
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\GameStore.Api.deps.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\GameStore.Api.runtimeconfig.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\GameStore.Api.dll
@@ -109,12 +108,6 @@ C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\Game
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\staticwebassets.build.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\staticwebassets.development.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\staticwebassets.build.endpoints.json
-C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\staticwebassets\msbuild.GameStore.Api.Microsoft.AspNetCore.StaticWebAssets.props
-C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\staticwebassets\msbuild.GameStore.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\staticwebassets\msbuild.build.GameStore.Api.props
-C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.GameStore.Api.props
-C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.GameStore.Api.props
-C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\staticwebassets.pack.json
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\GameStor.5118A84D.Up2Date
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\GameStore.Api.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\obj\Release\net8.0\refint\GameStore.Api.dll
@@ -159,3 +152,9 @@ C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\Game
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.API\bin\Release\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Release\net8.0\rpswa.dswa.cache.json
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Release\net8.0\rjimswa.dswa.cache.json
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Release\net8.0\rjsmrazor.dswa.cache.json
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Release\net8.0\rjsmcshtml.dswa.cache.json
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\GameStore.Api\obj\Release\net8.0\staticwebassets.build.json.cache
+C:\repos\Proyectos_NETCORE\DotNetCodeAcademy\Bootcamp\GameStore\Backend\src\gamestore.api\bin\Release\net8.0\GameStore.Api.exe

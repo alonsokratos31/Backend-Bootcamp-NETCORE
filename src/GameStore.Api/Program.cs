@@ -2,6 +2,7 @@ using Azure.Identity;
 using GameStore.Api.Data;
 using GameStore.Api.Features.Baskets;
 using GameStore.Api.Features.Baskets.Authorization;
+using GameStore.Api.Features.Diagnostics;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
 using GameStore.Api.Shared.Authorization;
@@ -10,12 +11,12 @@ using GameStore.Api.Shared.ErrorHandling;
 using GameStore.Api.Shared.FileUpload;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.HttpLogging;
-using Microsoft.Extensions.Azure;
 using Microsoft.Net.Http.Headers;
 
 
 Environment.SetEnvironmentVariable("ASPNETCORE_STATICWEBASSETS", "false");
 var builder = WebApplication.CreateBuilder(args);
+builder.AddServiceDefaults();
 builder.Services.AddProblemDetails()
                 .AddExceptionHandler<GlobalExceptionHandler>();
 
@@ -57,7 +58,6 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddSingleton<CdnUrlTransformer>();
-builder.Services.AddSingleton<AzureEventSourceLogForwarder>();
 var app = builder.Build();
 
 app.UseCors();
@@ -66,6 +66,9 @@ app.UseAuthorization();
 app.MapGames();
 app.MapGenre();
 app.MapBaskets();
+app.MapDiagnostics();
+app.MapDefaultEndpoints();
+
 
 app.UseHttpLogging();
 
@@ -75,8 +78,6 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
-    app.Services.GetRequiredService<AzureEventSourceLogForwarder>()
-                .Start();
     app.UseExceptionHandler();
 }
 
