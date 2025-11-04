@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[9.5.2, )"
             },
+            "Aspire.Hosting.Azure.AppContainers": {
+              "target": "Package",
+              "version": "[9.5.2, )"
+            },
             "Aspire.Hosting.Azure.PostgreSQL": {
               "target": "Package",
               "version": "[9.5.2, )"

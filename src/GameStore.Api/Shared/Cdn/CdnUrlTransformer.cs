@@ -1,4 +1,3 @@
-using System;
 using Azure.Storage.Blobs;
 
 namespace GameStore.Api.Shared.Cdn;
