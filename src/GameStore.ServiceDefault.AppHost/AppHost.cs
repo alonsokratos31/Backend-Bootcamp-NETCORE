@@ -6,6 +6,7 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 var entraValidAudience = builder.AddParameter("EntraValidAudience");
 var entraAuthority = builder.AddParameter("EntraAuthority");
+var allowedOrigins = builder.AddParameter("AllowedOrigins");
 
 var database = builder.AddAzurePostgresFlexibleServer("postgres")
 .RunAsContainer(postgres =>
@@ -93,6 +94,7 @@ if (builder.ExecutionContext.IsPublishMode)
     .WithParameter("StorageBlobEndpoint", blobEndpoint);
 
     api.WithEnvironment("Azure_FrontDoor_Hostname", frontDoor.GetOutput("frontDoorEndpointHostName"));
+    api.WithEnvironment("AllowedOrigins", allowedOrigins);
 }
 
 if (builder.ExecutionContext.IsRunMode)
